@@ -395,10 +395,10 @@
 
         .footer-cta {
             font-family: 'Syne', sans-serif;
-            font-size: clamp(2rem, 5vw, 5rem);
+            font-size: clamp(1.1rem, 5vw, 5rem); /* Alt sınır mobilde tek satıra sığması için 1.1rem'e düşürüldü */
             font-weight: 700;
             letter-spacing: -0.02em;
-            word-break: break-word; /* Mobilde uzun maillerin taşmasını engeller */
+            white-space: nowrap; /* Mobilde maillerin kırılmasını ve alta taşmasını kesin olarak engeller */
         }
 
         .footer-cta a {
